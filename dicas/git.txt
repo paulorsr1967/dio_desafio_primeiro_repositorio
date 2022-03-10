@@ -1,0 +1,32 @@
+rm -rf ~/.git
+
+//inicializar o git
+git init
+
+//configurar o git
+git config --global user.email "paulorsr@hotmail.com"
+git config --global user.name "paulorsr1967"
+
+//adicionar arquivos
+git add *
+git add .
+
+//commit
+git commit -m "commit inicial"
+
+//status
+git status
+
+//listar configurações
+git config --list
+
+//remover configuração
+git config --global --unset user.email
+
+//configurar github
+git remote add origin https://github.com/paulorsr1967/IMC.git
+git remote -v
+
+//enviar pro github
+git push origin master
+git push origin main
